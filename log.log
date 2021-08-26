@@ -1,0 +1,217 @@
+wave_seq_1024_100 ---------------------------------------
+computing 100 frames of 1024 by 1024 picture
+compute time: 1.9008 s
+END -----------------------------------------------------
+wavecuda1_1024_100 ---------------------------------------
+computing 100 frames of 1024 by 1024 picture
+==167673== NVPROF is profiling process 167673, command: ./wavecuda1 1024 100
+compute time: 0.3488 s
+==167673== Profiling application: ./wavecuda1 1024 100
+==167673== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:  100.00%  348.71ms         1  348.71ms  348.71ms  348.71ms  calculateframe(int, int, unsigned char*)
+      API calls:   71.01%  348.72ms         1  348.72ms  348.72ms  348.72ms  cudaDeviceSynchronize
+                   28.73%  141.07ms         1  141.07ms  141.07ms  141.07ms  cudaMallocManaged
+                    0.17%  818.01us         1  818.01us  818.01us  818.01us  cudaFree
+                    0.04%  194.84us       101  1.9290us     116ns  81.746us  cuDeviceGetAttribute
+                    0.03%  157.02us         1  157.02us  157.02us  157.02us  cuDeviceTotalMem
+                    0.01%  67.729us         1  67.729us  67.729us  67.729us  cuDeviceGetName
+                    0.01%  28.959us         1  28.959us  28.959us  28.959us  cudaLaunchKernel
+                    0.00%  6.1870us         1  6.1870us  6.1870us  6.1870us  cuDeviceGetPCIBusId
+                    0.00%  1.5710us         3     523ns     175ns     730ns  cuDeviceGetCount
+                    0.00%     783ns         2     391ns     277ns     506ns  cuDeviceGet
+                    0.00%     240ns         1     240ns     240ns     240ns  cuDeviceGetUuid
+
+==167673== Unified Memory profiling result:
+Device "NVIDIA GeForce GTX 1660 Ti with Max-Q Design (0)"
+   Count  Avg Size  Min Size  Max Size  Total Size  Total Time  Name
+      54         -         -         -           -  3.334509ms  Gpu page fault groups
+END -----------------------------------------------------
+wavecuda2_1024_100 ---------------------------------------
+computing 100 frames of 1024 by 1024 picture
+==167693== NVPROF is profiling process 167693, command: ./wavecuda2 1024 100
+compute time: 0.0192 s
+==167693== Profiling application: ./wavecuda2 1024 100
+==167693== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:  100.00%  19.076ms         1  19.076ms  19.076ms  19.076ms  calculateframe(int, int, unsigned char*)
+      API calls:   86.78%  133.95ms         1  133.95ms  133.95ms  133.95ms  cudaMallocManaged
+                   12.31%  19.004ms         1  19.004ms  19.004ms  19.004ms  cudaDeviceSynchronize
+                    0.59%  911.30us         1  911.30us  911.30us  911.30us  cudaFree
+                    0.12%  183.27us       101  1.8140us     117ns  78.577us  cuDeviceGetAttribute
+                    0.09%  144.81us         1  144.81us  144.81us  144.81us  cuDeviceTotalMem
+                    0.08%  128.22us         1  128.22us  128.22us  128.22us  cudaLaunchKernel
+                    0.02%  30.392us         1  30.392us  30.392us  30.392us  cuDeviceGetName
+                    0.00%  7.3040us         1  7.3040us  7.3040us  7.3040us  cuDeviceGetPCIBusId
+                    0.00%  1.2940us         3     431ns     134ns     949ns  cuDeviceGetCount
+                    0.00%     694ns         2     347ns     127ns     567ns  cuDeviceGet
+                    0.00%     218ns         1     218ns     218ns     218ns  cuDeviceGetUuid
+
+==167693== Unified Memory profiling result:
+Device "NVIDIA GeForce GTX 1660 Ti with Max-Q Design (0)"
+   Count  Avg Size  Min Size  Max Size  Total Size  Total Time  Name
+     300         -         -         -           -  15.06920ms  Gpu page fault groups
+END -----------------------------------------------------
+wave_seq_1024_200 ---------------------------------------
+computing 200 frames of 1024 by 1024 picture
+compute time: 3.5951 s
+END -----------------------------------------------------
+wavecuda1_1024_200 ---------------------------------------
+computing 200 frames of 1024 by 1024 picture
+==167729== NVPROF is profiling process 167729, command: ./wavecuda1 1024 200
+compute time: 0.3843 s
+==167729== Profiling application: ./wavecuda1 1024 200
+==167729== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:  100.00%  384.27ms         1  384.27ms  384.27ms  384.27ms  calculateframe(int, int, unsigned char*)
+      API calls:   73.67%  384.28ms         1  384.28ms  384.28ms  384.28ms  cudaDeviceSynchronize
+                   25.96%  135.40ms         1  135.40ms  135.40ms  135.40ms  cudaMallocManaged
+                    0.29%  1.5327ms         1  1.5327ms  1.5327ms  1.5327ms  cudaFree
+                    0.03%  175.15us       101  1.7340us     104ns  77.462us  cuDeviceGetAttribute
+                    0.03%  147.35us         1  147.35us  147.35us  147.35us  cuDeviceTotalMem
+                    0.02%  78.299us         1  78.299us  78.299us  78.299us  cuDeviceGetName
+                    0.01%  29.012us         1  29.012us  29.012us  29.012us  cudaLaunchKernel
+                    0.00%  8.3420us         1  8.3420us  8.3420us  8.3420us  cuDeviceGetPCIBusId
+                    0.00%  1.0410us         3     347ns     120ns     761ns  cuDeviceGetCount
+                    0.00%     624ns         2     312ns     101ns     523ns  cuDeviceGet
+                    0.00%     219ns         1     219ns     219ns     219ns  cuDeviceGetUuid
+
+==167729== Unified Memory profiling result:
+Device "NVIDIA GeForce GTX 1660 Ti with Max-Q Design (0)"
+   Count  Avg Size  Min Size  Max Size  Total Size  Total Time  Name
+     109         -         -         -           -  7.357060ms  Gpu page fault groups
+END -----------------------------------------------------
+wavecuda2_1024_200 ---------------------------------------
+computing 200 frames of 1024 by 1024 picture
+==167743== NVPROF is profiling process 167743, command: ./wavecuda2 1024 200
+compute time: 0.0330 s
+==167743== Profiling application: ./wavecuda2 1024 200
+==167743== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:  100.00%  32.923ms         1  32.923ms  32.923ms  32.923ms  calculateframe(int, int, unsigned char*)
+      API calls:   78.56%  128.78ms         1  128.78ms  128.78ms  128.78ms  cudaMallocManaged
+                   20.09%  32.939ms         1  32.939ms  32.939ms  32.939ms  cudaDeviceSynchronize
+                    1.09%  1.7808ms         1  1.7808ms  1.7808ms  1.7808ms  cudaFree
+                    0.11%  181.68us       101  1.7980us     117ns  78.670us  cuDeviceGetAttribute
+                    0.09%  144.29us         1  144.29us  144.29us  144.29us  cuDeviceTotalMem
+                    0.03%  46.908us         1  46.908us  46.908us  46.908us  cudaLaunchKernel
+                    0.03%  42.540us         1  42.540us  42.540us  42.540us  cuDeviceGetName
+                    0.01%  9.8120us         1  9.8120us  9.8120us  9.8120us  cuDeviceGetPCIBusId
+                    0.00%  1.2550us         3     418ns     158ns     903ns  cuDeviceGetCount
+                    0.00%     730ns         2     365ns     128ns     602ns  cuDeviceGet
+                    0.00%     240ns         1     240ns     240ns     240ns  cuDeviceGetUuid
+
+==167743== Unified Memory profiling result:
+Device "NVIDIA GeForce GTX 1660 Ti with Max-Q Design (0)"
+   Count  Avg Size  Min Size  Max Size  Total Size  Total Time  Name
+     600         -         -         -           -  24.99267ms  Gpu page fault groups
+END -----------------------------------------------------
+wavecuda1_2048_100 ---------------------------------------
+computing 100 frames of 2048 by 2048 picture
+compute time: 8.4498 s
+END -----------------------------------------------------
+wavecuda1_2048_100 ---------------------------------------
+computing 100 frames of 2048 by 2048 picture
+==167801== NVPROF is profiling process 167801, command: ./wavecuda1 2048 100
+compute time: 1.2020 s
+==167801== Profiling application: ./wavecuda1 2048 100
+==167801== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:  100.00%  1.20200s         1  1.20200s  1.20200s  1.20200s  calculateframe(int, int, unsigned char*)
+      API calls:   89.59%  1.20201s         1  1.20201s  1.20201s  1.20201s  cudaDeviceSynchronize
+                   10.18%  136.65ms         1  136.65ms  136.65ms  136.65ms  cudaMallocManaged
+                    0.20%  2.6838ms         1  2.6838ms  2.6838ms  2.6838ms  cudaFree
+                    0.01%  167.86us       101  1.6610us      96ns  73.709us  cuDeviceGetAttribute
+                    0.01%  139.88us         1  139.88us  139.88us  139.88us  cuDeviceTotalMem
+                    0.00%  64.701us         1  64.701us  64.701us  64.701us  cuDeviceGetName
+                    0.00%  30.759us         1  30.759us  30.759us  30.759us  cudaLaunchKernel
+                    0.00%  5.3150us         1  5.3150us  5.3150us  5.3150us  cuDeviceGetPCIBusId
+                    0.00%     867ns         3     289ns     147ns     568ns  cuDeviceGetCount
+                    0.00%     558ns         2     279ns     105ns     453ns  cuDeviceGet
+                    0.00%     217ns         1     217ns     217ns     217ns  cuDeviceGetUuid
+
+==167801== Unified Memory profiling result:
+Device "NVIDIA GeForce GTX 1660 Ti with Max-Q Design (0)"
+   Count  Avg Size  Min Size  Max Size  Total Size  Total Time  Name
+     129         -         -         -           -  12.80953ms  Gpu page fault groups
+END -----------------------------------------------------
+wavecuda1_2048_100 ---------------------------------------
+computing 100 frames of 2048 by 2048 picture
+==167818== NVPROF is profiling process 167818, command: ./wavecuda2 2048 100
+compute time: 0.0600 s
+==167818== Profiling application: ./wavecuda2 2048 100
+==167818== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:  100.00%  59.899ms         1  59.899ms  59.899ms  59.899ms  calculateframe(int, int, unsigned char*)
+      API calls:   67.40%  131.01ms         1  131.01ms  131.01ms  131.01ms  cudaMallocManaged
+                   30.82%  59.893ms         1  59.893ms  59.893ms  59.893ms  cudaDeviceSynchronize
+                    1.50%  2.9196ms         1  2.9196ms  2.9196ms  2.9196ms  cudaFree
+                    0.13%  253.36us       101  2.5080us     111ns  122.76us  cuDeviceGetAttribute
+                    0.08%  151.81us         1  151.81us  151.81us  151.81us  cuDeviceTotalMem
+                    0.04%  79.184us         1  79.184us  79.184us  79.184us  cudaLaunchKernel
+                    0.02%  48.172us         1  48.172us  48.172us  48.172us  cuDeviceGetName
+                    0.00%  9.5990us         1  9.5990us  9.5990us  9.5990us  cuDeviceGetPCIBusId
+                    0.00%  1.2210us         3     407ns     145ns     904ns  cuDeviceGetCount
+                    0.00%     666ns         2     333ns     144ns     522ns  cuDeviceGet
+                    0.00%     236ns         1     236ns     236ns     236ns  cuDeviceGetUuid
+
+==167818== Unified Memory profiling result:
+Device "NVIDIA GeForce GTX 1660 Ti with Max-Q Design (0)"
+   Count  Avg Size  Min Size  Max Size  Total Size  Total Time  Name
+    1200         -         -         -           -  43.97756ms  Gpu page fault groups
+END -----------------------------------------------------
+wave_seq_2048_200 ---------------------------------------
+computing 200 frames of 2048 by 2048 picture
+
+compute time: 16.2851 s
+END -----------------------------------------------------
+wavecuda1_2048_200 ---------------------------------------
+computing 200 frames of 2048 by 2048 picture
+==167894== NVPROF is profiling process 167894, command: ./wavecuda1 2048 200
+compute time: 1.2944 s
+==167894== Profiling application: ./wavecuda1 2048 200
+==167894== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:  100.00%  1.29439s         1  1.29439s  1.29439s  1.29439s  calculateframe(int, int, unsigned char*)
+      API calls:   89.60%  1.29432s         1  1.29432s  1.29432s  1.29432s  cudaDeviceSynchronize
+                    9.97%  143.99ms         1  143.99ms  143.99ms  143.99ms  cudaMallocManaged
+                    0.39%  5.6388ms         1  5.6388ms  5.6388ms  5.6388ms  cudaFree
+                    0.01%  207.55us       101  2.0540us     125ns  87.214us  cuDeviceGetAttribute
+                    0.01%  171.58us         1  171.58us  171.58us  171.58us  cuDeviceTotalMem
+                    0.01%  116.75us         1  116.75us  116.75us  116.75us  cudaLaunchKernel
+                    0.01%  82.720us         1  82.720us  82.720us  82.720us  cuDeviceGetName
+                    0.00%  6.9870us         1  6.9870us  6.9870us  6.9870us  cuDeviceGetPCIBusId
+                    0.00%  1.2240us         3     408ns     164ns     858ns  cuDeviceGetCount
+                    0.00%     730ns         2     365ns     146ns     584ns  cuDeviceGet
+                    0.00%     259ns         1     259ns     259ns     259ns  cuDeviceGetUuid
+
+==167894== Unified Memory profiling result:
+Device "NVIDIA GeForce GTX 1660 Ti with Max-Q Design (0)"
+   Count  Avg Size  Min Size  Max Size  Total Size  Total Time  Name
+     263         -         -         -           -  26.83815ms  Gpu page fault groups
+END -----------------------------------------------------
+wavecuda2_2048_200 ---------------------------------------
+computing 200 frames of 2048 by 2048 picture
+==167912== NVPROF is profiling process 167912, command: ./wavecuda2 2048 200
+compute time: 0.1001 s
+==167912== Profiling application: ./wavecuda2 2048 200
+==167912== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:  100.00%  100.04ms         1  100.04ms  100.04ms  100.04ms  calculateframe(int, int, unsigned char*)
+      API calls:   57.10%  141.66ms         1  141.66ms  141.66ms  141.66ms  cudaMallocManaged
+                   40.32%  100.04ms         1  100.04ms  100.04ms  100.04ms  cudaDeviceSynchronize
+                    2.33%  5.7760ms         1  5.7760ms  5.7760ms  5.7760ms  cudaFree
+                    0.11%  281.01us       101  2.7820us     206ns  119.64us  cuDeviceGetAttribute
+                    0.10%  248.31us         1  248.31us  248.31us  248.31us  cuDeviceTotalMem
+                    0.02%  60.596us         1  60.596us  60.596us  60.596us  cuDeviceGetName
+                    0.01%  30.867us         1  30.867us  30.867us  30.867us  cudaLaunchKernel
+                    0.00%  7.1020us         1  7.1020us  7.1020us  7.1020us  cuDeviceGetPCIBusId
+                    0.00%  2.3320us         3     777ns     230ns  1.7200us  cuDeviceGetCount
+                    0.00%  1.1300us         2     565ns     230ns     900ns  cuDeviceGet
+                    0.00%     402ns         1     402ns     402ns     402ns  cuDeviceGetUuid
+
+==167912== Unified Memory profiling result:
+Device "NVIDIA GeForce GTX 1660 Ti with Max-Q Design (0)"
+   Count  Avg Size  Min Size  Max Size  Total Size  Total Time  Name
+    2400         -         -         -           -  67.92997ms  Gpu page fault groups
+END -----------------------------------------------------

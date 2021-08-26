@@ -90,13 +90,13 @@ int main(int argc, char* argv[]) {
   printf("compute time: %.4f s\n", runtime);
 
   // verify result by writing frames to BMP files
-  //   if ((width <= 256) && (frames <= 100)) {
-  for (int frame = 0; frame < frames; frame++) {
-    char name[32];
-    sprintf(name, "wave%d.bmp", frame + 1000);
-    writeBMP(width, width, &pic[frame * width * width], name);
+  if ((width <= 256) && (frames <= 100)) {
+    for (int frame = 0; frame < frames; frame++) {
+      char name[32];
+      sprintf(name, "wave%d.bmp", frame + 1000);
+      writeBMP(width, width, &pic[frame * width * width], name);
+    }
   }
-  //   }256
 
   cudaFree(pic);
   return 0;
